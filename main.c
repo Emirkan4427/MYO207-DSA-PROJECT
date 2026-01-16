@@ -1,7 +1,7 @@
 #include <stdio.h>
 // Emirkan Sahin
 // 2420161039
-// https://www.btkakademi.gov.tr/portal/certificates
+// https://www.btkakademi.gov.tr/portal/certificates= zXztnLznpG
 
 void dizi_yazdir(int dizi[], int bas_ind, int son_ind) {
     int i;
