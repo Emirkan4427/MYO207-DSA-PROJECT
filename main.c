@@ -1,39 +1,39 @@
 #include <stdio.h>
 // Emirkan Sahin
 // 2420161039
-// https://www.btkakademi.gov.tr/portal/certificates=zXztnLznpG
+// https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=zXztnLznpG
 
-void dizi_yazdir(int dizi[], int bas_ind, int son_ind) {
-    int i;
-    for (i = bas_ind; i <= son_ind; i++) {
-        printf(" %2d", dizi[i]);
+void dizi_yazdir ( int dizi [ ] , int bas_ind, int son_ind )  {
+    tamsayı i;
+    for  ( i = bas_ind; i <= son_ind; i++ )  {
+        printf ( " %2d" , dizi [ i ] ) ;
     }
-    printf("\n");
+    printf ( " \n " ) ;
 }
 
-void arayaeklemeli_sirala(int dizi[], int BOYUT) {
+void arayaeklemeli_sirala ( int dizi [ ] , int BOYUT )  {
     int i, j;
     int anahtar;
 
-    for (i = 1; i <= BOYUT - 1; i++) {
-        anahtar = dizi[i];
+    for  ( i = 1 ; i <= BOYUT - 1 ; i++ )  {
+        anahtar = dizi [ i ] ;
 
-        for (j = i - 1; j >= 0 && anahtar < dizi[j]; j--) {
-            dizi[j + 1] = dizi[j];
+        for  ( j = i - 1 ; j >= 0 && anahtar < dizi [ j ] ; j-- )  {
+            dizi [ j + 1 ] = dizi [ j ] ;
         }
-        dizi[j + 1] = anahtar;
+        dizi [ j + 1 ] = anahtar;
 
-        printf("iter.%2d: ", i);
-        dizi_yazdir(dizi, 0, BOYUT - 1);
+        printf ( "iter.%2d: " , i ) ;
+        dizi_yazdir ( dizi, 0 , BOYUT - 1 ) ;
     }
 }
 
-int ikili_arama(int dizi[], int BOYUT, int aranan) {
-    int sol = 0;
-    int sag = BOYUT - 1;
-    int orta;
+int ikili_arama ( int dizi [ ] , int BOYUT, int aranan )  {
+    int sol = 0 ;
+    int sag = BOYUT - 1 ;
+    orta;
 
-    while (sol <= sag) {
+     ( sol <= sag )  olduğu sürece {
         orta = (sol + sag) / 2;
 
         if (dizi[orta] == aranan)
